@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service AnExampleService {
+    rpc AnExamplegRPCCall(AnExamplegRPCCallRequest) returns (AnExamplegRPCCallResponse);
+  }
+  
+message AnExamplegRPCCallRequest {
+    string id = 1;
+}
+
+message AnExamplegRPCCallResponse {
+    string id = 1;
+    string name = 2;
+}
